@@ -79,6 +79,15 @@ figure { margin: 0; }
 .gallery img:hover { transform: scale(1.015); }
 figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); text-align: center; }
 
+/* per-robot blocks */
+.robot { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: start; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
+.robot-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.robot-head h4 { margin: 0; font-size: 17px; text-transform: none; letter-spacing: -0.01em; color: var(--ink); }
+.robot ul { margin-top: 12px; }
+.robot-media { margin-top: 0; }
+.robot-media.one { grid-template-columns: 240px; }
+.robot-media.two { grid-template-columns: 240px 240px; }
+
 /* skills */
 .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .skills > div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
@@ -102,6 +111,8 @@ footer { padding-top: 32px; padding-bottom: 40px; color: var(--muted); font-size
   .hero { flex-direction: column; align-items: flex-start; gap: 24px; padding-top: 40px; }
   .headshot { width: 140px; height: 140px; }
   .g4, .g3 { grid-template-columns: repeat(2, 1fr); }
+  .robot { grid-template-columns: 1fr; gap: 16px; }
+  .robot-media.one, .robot-media.two { grid-template-columns: repeat(2, 1fr); }
   .skills { grid-template-columns: 1fr; }
   .wrap { padding: 0 16px; }
   .nav nav { white-space: nowrap; }
